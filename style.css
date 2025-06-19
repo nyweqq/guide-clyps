@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  background-color: #1c1c1c;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  color: #b7ff2c;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.intro {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.step {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.step .text {
+  flex: 1;
+  color: white;
+}
+
+.step h2 {
+  color: #b7ff2c;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.step ul {
+  padding-left: 20px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.step .astuce {
+  font-style: italic;
+  color: #ccc;
+}
+
+.step .image {
+  flex: 1;
+  text-align: center;
+}
+
+.step .image img {
+  max-width: 260px;
+  height: auto;
+  border-radius: 12px;
+}
+.note {
+  color: #ccc;
+  font-size: 14px;
+}
+.image-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-grid img {
+  max-width: 220px;
+  height: auto;
+  border-radius: 12px;
+}
+.conclusion {
+  text-align: center;
+  max-width: 700px;
+  margin: 80px auto 60px;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.conclusion strong {
+  color: white;
+}
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #1c1c1c;
+  color: #666;
+  border-top: 1px solid #333;
+}
+
+.footer-logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+.landing-header {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background-color: #1c1c1c;
+}
+
+.header-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.main-title {
+  font-size: 36px;
+  color: #b7ff2c;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 18px;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+/* Animation fade-in montée */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+/* Effet au survol sur chaque bloc de section */
+.step {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Effet zoom sur les images */
+.step .image img,
+.image-grid img {
+  transition: transform 0.3s ease;
+}
+
+.step .image img:hover,
+.image-grid img:hover {
+  transform: scale(1.03);
+}
+.step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(183, 255, 44, 0.25), 0 0 20px rgba(183, 255, 44, 0.15);
+}
